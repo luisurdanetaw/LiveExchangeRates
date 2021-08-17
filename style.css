@@ -1,0 +1,46 @@
+body{
+  background: #0d1624;
+}
+h1{
+  color: white;
+}
+.switch{
+  border: solid 1px #0275d8;
+}
+.white{
+  color: white;
+}
+.input-bar{
+  border-radius: 5px;
+  border: solid 5px #21262e;
+  background-color:#21262e;
+}
+.bar{
+  color: white;
+  background: #0d1624;
+  border: solid 1px #0275d8;
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-bottom:3px;
+
+}
+.white-text{
+  color:white;
+}
+.circle{
+  border-radius: 100%;
+}
+.lg-text{
+  font-size: 20px;
+}
+.bg-colored-text{
+  color:#0d1624;
+}
+.themed-border{
+  border: solid 1px #0275d8;
+}
+.gray-text{
+  color: darkslategray;
+  font-size: 12px;
+}
+

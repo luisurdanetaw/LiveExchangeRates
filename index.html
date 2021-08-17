@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+    <div class="container ">
+      <div class="row text-center my-5">
+        <h1>
+           <img src="https://image.flaticon.com/icons/png/512/2991/2991176.png" alt="navbar brand logo" width="56" height="56" class="d-inline-block align-text-top mx-1 pb-1">
+           Sample.io
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4 my-3 text-center text-md-start py-md-1 ">
+
+          <!--Input - Amount of symbol to convert-->
+          <div>
+            <label for="amount" class="white-text mb-1">Amount</label>
+          </div>
+          <div>
+            <input type="text" id="amount" class="input-group bar py-md-2 py-1 ">
+          </div>
+          
+          <!--Input - Amount of symbol to convert END-->
+        </div>
+        <div class="col-12 col-md-4 my-3 text-center text-md-start py-md-1">
+          <!--Select crypto dropdown-->
+          <div>
+            <label for="symbol" class="white-text  mb-1">From</label>
+          </div>
+          <div>
+            <select id="symbol" class="form-select bar py-md-2 py-1">
+              
+              <option value="btcusdt" selected="selected">BTC</option>
+              <option value="ltcusdt">LTC</option>
+              <option value="ethusdt">ETH</option>
+              <option value="xrpusdt">XRP</option>
+              <option value="dogeusdt">DOGE</option>
+              <option value="xlmusdt">XLM</option>
+              <option value="bchusdt">BCH</option>
+              <option value="adausdt">ADA</option>
+              <option value="bnbusdt">BNB</option>
+              <option value="linkusdt">LINK</option>
+            </select>
+           <!--Select crypto dropdown END-->
+          </div>
+        </div>
+        <!--
+        <div class="col-12 col-md-3 my-3 mt-md-5 text-center text-md-center">
+         
+          <button class="btn btn-outline-primary white circle" type="button">^</button>
+          
+        </div>-->
+        <div class="col-12 col-md-4 my-3 text-center text-md-start py-md-1">
+          <!--Select target crypto dropdown-->
+          <div>
+            <label for="target-symbol" class="white-text  mb-1">To</label>
+          </div>
+          <div>
+            <select id="target-symbol" class="form-select bar py-md-2 py-1 pe-md-5">
+              <option value="btcusdt" selected ="selected">BTC</option>
+              <option value="ltcusdt">LTC</option>
+              <option value="ethusdt">ETH</option>
+              <option value="xrpusdt">XRP</option>
+              <option value="dogeusdt">DOGE</option>
+              <option value="xlmusdt">XLM</option>
+              <option value="bchusdt">BCH</option>
+              <option value="adausdt">ADA</option>
+              <option value="bnbusdt">BNB</option>
+              <option value="linkusdt">LINK</option>
+            </select>
+          </div> 
+          <!--Select target crypto dropdown END-->
+        </div>
+        <div class="col-12 text-center text-md-start">
+          <!--Convert button-->
+          <div class="d-grid gap-2 d-md-block mt-4">
+            <button class="btn btn-primary my-3 py-md-2 px-md-3" type="button" onclick="convert()">Convert</button>
+          </div>         
+          <!--Convert button END-->
+        </div>
+        <div class="col-12 text-center mt-3">
+          <div id="display" class="lg-text bg-colored-text">---</div>
+        </div>
+        <div class="col-12 text-center my-2">
+          <div id="conversion" class="white-text lg-text bg-colored-text">---</div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer gray-text text-center mt-md-5"> © Luis Urdaneta 2021</footer>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
