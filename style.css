@@ -43,4 +43,8 @@ h1{
   color: darkslategray;
   font-size: 12px;
 }
-
+#amount:focus{
+  outline: none;
+  border: solid 0.25px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 1px 4px rgba(2, 117, 216, 0.3)
+}
